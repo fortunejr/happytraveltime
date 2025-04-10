@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* General Styles */
+.Nav {
+    display: flex;
+    justify-content: space-between; /* This will push the logo to the left and the hamburger to the right */
+    align-items: center;
+    padding: 0 20px; /* Adjust padding as needed */
+    margin-top: 20px;
+  }
+.Nav li a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .Nav li {
+    padding: 0.68rem;
+    font-size: 16px;
+  }
+  
+.inline-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin-left: 30px;
+}
+/* .logo-img {
+    width: 130px;
+    margin-right: 10px;
+  } */
+.logo {
+    font-size: 27px;
+    font-weight: bolder;
+    color: #3541C1;
+    font-family: Merriweather;
+}
+
+  .hamburger-menu {
+    padding: 3px;
+    background-color: #23365F; /* Adjust background color as needed */
+    border-radius: 50%; /* Optional: makes the background circular */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adds a shadow to the icon */
+  }
+  .hamburger-menu .hamburger-react {
+    color: white; /* Adjust the icon color to ensure contrast against the background */
+  }
+.hamburger-menu {
+    display: none; /* Hide by default */
+}
+.nav-ul {
+    position: absolute; /* This makes the nav menu overlap the content when open */
+    top: 60px; /* Adjust based on your header height */
+    right: 20px; /* Align the nav menu to the right */
+    background-color: white; /* Adjust background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow */
+    padding: 10px 20px;
+  }
+  .nav-ul ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+/* Desktop and Tablet (Min-width: 769px) */
+@media (min-width: 769px) {
+    .inline-nav {
+        display: flex; /* Show inline nav */
+        margin-left: 30px;
+    }
+
+    .hamburger-menu {
+        display: none; /* Hide hamburger menu */
+    }
+
+    .nav-ul {
+        display: none; /* Hide mobile dropdown */
+    }
+}
+
+/* Mobile (Max-width: 1062px) */
+@media (max-width: 1111px) {
+    .inline-nav {
+        display: none; /* Hide inline nav on mobile */
+    }
+
+    .hamburger-menu {
+        display: block; /* Show hamburger menu */
+    }
+
+    .nav-ul {
+        display: block; /* Initially hide dropdown */
+    }
+
+    .nav-ul ul {
+        flex-direction: column; /* Stack items vertically */
+    }
+    .logo {
+        font-size: 23px;
+        font-weight: bolder;
+        color: #3541C1;
+        font-family: Merriweather;
+    }
+}
