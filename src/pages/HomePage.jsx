@@ -1,9 +1,14 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import '../styles/HomePage.css'; // create this CSS file
+import HeroSection from '../components/HeroSection';
 
 const HomePage = () => {
   return (
-    <div>HomePage</div>
-  )
-}
+    <div >
+      <HeroSection/>
+    </div>
+  );
+};
 
-export default HomePage
+export default HomePage;

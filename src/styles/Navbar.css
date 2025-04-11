@@ -52,10 +52,11 @@
 .nav-ul {
     position: absolute; /* This makes the nav menu overlap the content when open */
     top: 60px; /* Adjust based on your header height */
-    right: 20px; /* Align the nav menu to the right */
+    right: 0; /* Align the nav menu to the right */
     background-color: white; /* Adjust background color */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow */
-    padding: 10px 20px;
+    padding: 30px 60px;
+    z-index: 50;
   }
   .nav-ul ul {
     list-style: none;
@@ -102,4 +103,11 @@
         color: #3541C1;
         font-family: Merriweather;
     }
+}
+.active-link {
+  background-color: #3541C1;
+  color: white !important;
+  padding: 8px 12px;
+  border-radius: 6px;
+  text-decoration: none;
 }

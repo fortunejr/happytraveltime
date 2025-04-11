@@ -22,7 +22,7 @@ const Footer = () => {
         <div className="about">
           <h4>About Us</h4>
           <p className="about-p">
-            At Ricadd Travels and Tours, we’re not just about booking trips;
+            At Happy Travel Time we’re not just about booking trips;
             we’re about crafting unforgettable experiences.
           </p>
         </div>
@@ -35,9 +35,6 @@ const Footer = () => {
             </li>
             <li>
               <Link to="/services">Our Services</Link>
-            </li>
-            <li>
-              <Link to="/packages">Packages</Link>
             </li>
             <li>
               <Link to="/contact">Contact Us</Link>
@@ -70,7 +67,7 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a href="mailto:lorddakano@gmail.com" alt="mail icon">
+              <a href="#" alt="mail icon">
                 <img src="/images/mail.png"></img>Send a Mail
               </a>
             </li>
@@ -79,11 +76,11 @@ const Footer = () => {
 
         <div className="other-contact">
           <h4>Other Contacts</h4>
-          <p className="other-p">Head Office: 1st Avenue, Estate, Gwarinpa, Fct, Abuja</p>
-          <p className="other-p">US Office: 13481 Heidi Way, Truckee, California(CA), 96161</p>
+          <p className="other-p">Head Office: Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+          <p className="other-p">US Office: Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
           <li>
             <a href="tel:+16262188870" alt="mail icon">
-              <img src="/images/phone2.png"></img>+1-(626)-218-8870
+              <img src="/images/phone2.png"></img>+1-(626)-218-1234
             </a>
           </li>
           <li>

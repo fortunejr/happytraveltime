@@ -1,0 +1,57 @@
+
+.hero-section {
+    position: relative;
+    background-image: url('/images/travelling.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding-top: 80px;
+    overflow: hidden;
+    }
+
+  
+.hero-content {
+    position: relative;
+    z-index: 2;
+    padding: 2rem;
+    border-radius: 10px;
+    }
+  
+  .hero-content h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+  }
+  
+  .hero-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .hero-button {
+    background-color: #3541C1;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .hero-button:hover {
+    background-color: #2331a5;
+  }
+  .hero-section::before {
+    content: "";
+    position: absolute;
+    inset: 0; /* same as top: 0; right: 0; bottom: 0; left: 0 */
+    background-color: rgba(0, 0, 0, 0.5); /* darkness level */
+    backdrop-filter: blur(4px); /* level of blur */
+    z-index: 1;
+  }
