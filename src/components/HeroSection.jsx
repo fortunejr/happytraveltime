@@ -7,10 +7,11 @@ const HeroSection = () => {
   return (
     <div className="hero-section">
         <div className="hero-content">
-        <h1>Explore and Travel</h1>
-        <h3>We're your Gateway to Seamless Travel Experiences!</h3>
-        <Link to="/contact">
-            <button className="hero-button">Contact us now</button>
+        <div className="overlay"></div>
+        <h1>Unlock the adventure of a lifetime!</h1>
+        <h3>From exotic beaches to bustling cities, we make your travel dreams come true</h3>
+        <Link to="/contact">    
+            <button className="hero-button">Book now</button>
         </Link>
         </div>
     </div>

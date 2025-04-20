@@ -49,21 +49,21 @@ const Footer = () => {
           <h4>Follow us on Social Media</h4>
           <ul className="social-icons">
             <li>
-              <a target="_blank" rel="noreferrer" href="#">
+              <a target="_blank" rel="noreferrer" href="https://web.facebook.com/profile.php?id=100087645991380">
                 <img src="/images/facebook.png" alt="facebook icon"></img>
                 Facebook
               </a>
             </li>
             <li>
-              <a target="_blank" rel="noreferrer" href="#">
+              <a target="_blank" rel="noreferrer" href="https://www.instagram.com/happytraveltime0/">
                 <img src="/images/instagram.png" alt="instagram icon"></img>
                 Instagram
               </a>
             </li>
             <li>
-              <a target="_blank" rel="noreferrer" href="#">
-                <img src="/images/linkedin.png" alt="linkedin icon"></img>
-                LinkedIn
+              <a target="_blank" rel="noreferrer" href="www.tiktok.com/@happytraveltime0">
+                <img src="/images/tiktok.png" alt="tiktok icon"></img>
+                TikTok
               </a>
             </li>
             <li>
@@ -76,18 +76,17 @@ const Footer = () => {
 
         <div className="other-contact">
           <h4>Other Contacts</h4>
-          <p className="other-p">Head Office: Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-          <p className="other-p">US Office: Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+          <p className="other-p">Head Office: 19 Kudirat Abiola way, Oregun Ikeja, Lagos</p>
           <li>
-            <a href="tel:+16262188870" alt="mail icon">
-              <img src="/images/phone2.png"></img>+1-(626)-218-1234
+            <a href="tel:+2347073689585" alt="mail icon">
+              <img src="/images/phone2.png"></img>+234 707 368 9585
             </a>
           </li>
           <li>
-            <a href="tel:+16262188870" alt="mail icon">
-              <img src="/images/phone2.png"></img>+234-(0)-912-3456-789
+            <a href="mailto:hello@happytraveltimelimited.com" alt="mail icon">
+            <img width='40px' src="/images/mail.png"></img>hello@happytraveltimelimited.com
             </a>
-          </li>
+            </li>
         </div>
       </div>
     </div>

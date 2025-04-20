@@ -13,7 +13,7 @@ const Navbar = () => {
   return (
     <nav className="Nav">
       <div className="logo">
-        <NavLink exact="true" to="/">HappyTimeTravel</NavLink>
+        <NavLink exact="true" to="/"><img width='150px' src="/images/logo.png" alt="logo"></img></NavLink>
       </div>
 
       {/* Hamburger menu visible only on mobile */}
