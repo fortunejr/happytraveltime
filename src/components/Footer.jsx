@@ -76,7 +76,9 @@ const Footer = () => {
 
         <div className="other-contact">
           <h4>Other Contacts</h4>
+          <a target="_blank" rel="noreferrer" href="https://maps.app.goo.gl/xo43WuhBxm2gZ3kA9">
           <p className="other-p">Head Office: 19 Kudirat Abiola way, Oregun Ikeja, Lagos</p>
+          </a>
           <li>
             <a href="tel:+2347073689585" alt="mail icon">
               <img src="/images/phone2.png"></img>+234 707 368 9585
