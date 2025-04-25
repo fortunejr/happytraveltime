@@ -5,18 +5,6 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <div className="footer">
-        <div class="newsletter-container">
-            <h2>Subscribe to our Newsletter</h2>
-            <form class="newsletter-form" action="/subscribe" method="POST">
-                <input
-                type="email"
-                name="email"
-                placeholder="Enter your email"
-                required
-                />
-                <button type="submit">Subscribe</button>
-            </form>
-        </div>
         
       <div className="footer-flex">
         <div className="about">

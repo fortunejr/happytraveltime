@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+RO:wght@100..400&family=Poetsen+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.wayfare-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #0099ff;
+    color: white;
+    margin-top: 50px;
+  }
+  
+  @media (min-width: 1024px) {
+    .wayfare-container {
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  
+  .wayfare-image {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  @media (min-width: 1024px) {
+    .wayfare-image {
+      width: 50%;
+      margin-bottom: 0;
+    }
+  }
+  
+  .wayfare-img {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .wayfare-text {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  @media (min-width: 1024px) {
+    .wayfare-text {
+      width: 50%;
+      text-align: left;
+    }
+  }
+  
+  .wayfare-subheading {
+    font-style: Cedarville Cursive;
+    margin-bottom: 10px;
+  }
+  
+  .wayfare-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 24px;
+  }
+  
+  @media (min-width: 1024px) {
+    .wayfare-heading {
+      font-size: 2.5rem;
+    }
+  }
+  
+  .wayfare-features {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    color: black;
+  }
+  
+  @media (min-width: 640px) {
+    .wayfare-features {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  .feature-box {
+    background: white;
+    border-radius: 8px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  .feature-icon {
+    color: #ff3399;
+    font-size: 1.25rem;
+  }
+  
+  .wayfare-button {
+    margin-top: 24px;
+    background: white;
+    color: #8ca7ef;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+  }
+  
+  .wayfare-button:hover {
+    background: #f1f1f1;
+  }
+  

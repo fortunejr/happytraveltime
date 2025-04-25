@@ -4,7 +4,7 @@
     background-image: url('/images/travelling.jpg');
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -24,25 +24,23 @@
     }
   
   .hero-content h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-bottom: 1rem;
     font-weight: bold;
   }
   
   .hero-content h3 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-bottom: 2rem;
   }
   
   .hero-button {
-    background-color: #3541C1;
+    background-color: #0099ff;
     color: white;
     border: none;
     padding: 0.75rem 1.5rem;
     font-size: 1rem;
     border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
   }
   
   .hero-button:hover {
@@ -76,6 +74,7 @@
   height: 100%;
   width: 100%;
   z-index: 1;
+  pointer-events: none; /* <-- Add this */
 }
 
 .hero-content {
@@ -87,3 +86,7 @@
 }
 
 
+.hero-section::before {
+    pointer-events: none; /* <-- Add this too */
+  }
+  

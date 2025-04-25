@@ -4,7 +4,7 @@
     flex-direction: column;
     min-height: 65vh;
     justify-content: flex-end;
-    background-color: #00336d;
+    background-color: #0099ff;
     margin: 0;
     color: white;
     font-size: 15px;
@@ -138,7 +138,9 @@ a {
       flex-direction: column;
       align-items: center;
     }
-  
+    .footer {
+        padding-top: 50px;
+    }
     .footer-flex > div {
       width: 100%;
     }
