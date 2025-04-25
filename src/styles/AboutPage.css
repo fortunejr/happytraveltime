@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+.about-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  gap: 30px;
+  font-family: 'Poppins', sans-serif;
+  opacity: 0;
+  transform: translateY(50px);
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.about-text {
+  text-align: center;
+  max-width: 600px;
+}
+
+.about-text h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #111;
+  animation: slideInLeft 1.2s ease-out;
+}
+
+.about-text h2 span {
+  color: #7dc3e8;
+}
+
+.about-text p {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  animation: fadeInUp 1.5s ease-out;
+}
+
+.about-contact {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  color: #222;
+  animation: fadeInUp 1.6s ease-out;
+}
+
+.about-contact a {
+  color: #c81e1e;
+  text-decoration: none;
+}
+
+.about-image {
+  text-align: center;
+  animation: slideInRight 1.2s ease-out;
+}
+
+.about-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+/* Animations */
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Desktop and tablet view */
+@media (min-width: 768px) {
+  .about-section {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  .about-text {
+    flex: 1;
+    text-align: left;
+  }
+
+  .about-image {
+    flex: 1;
+  }
+}
+.company-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 2rem;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .text-content {
+    flex: 1 1 500px;
+  }
+  
+  .image-content {
+    flex: 1 1 400px;
+  }
+  
+  .image-content img {
+    width: 80%;
+    height: 60%;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  .small-heading {
+    color: #7dc3e8; /* Tailwind's orange-500 */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .main-heading {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+  }
+  
+  .description {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+  }
+  
+  /* Responsive tweaks */
+  @media (max-width: 768px) {
+    .company-section {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .text-content, .image-content {
+      flex: 1 1 100%;
+    }
+    .image-content img {
+        width: 100%;
+    }
+  }
+  
