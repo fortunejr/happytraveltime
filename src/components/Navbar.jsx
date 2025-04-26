@@ -11,41 +11,38 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="Nav">
-      <div className="logo">
-        <NavLink exact="true" to="/"><img width='150px' src="/images/logo.png" alt="logo"></img></NavLink>
-      </div>
+    <nav className={`navbar ${open ? 'navbar-expanded' : ''}`}>
+      <div className="navbar-container">
+        {/* Logo */}
+        <div className="logo">
+          <NavLink exact="true" to="/">
+            <img width="150px" src="/images/logo.png" alt="logo" />
+          </NavLink>
+        </div>
 
-      {/* Hamburger menu visible only on mobile */}
-      <div className="hamburger-menu">
-        <Hamburger
-          size={24}
-          toggled={open}
-          toggle={setOpen}
-        />
-      </div>
-
-      {/* Inline nav for desktop/tablet screens */}
-      <div className='inline-nav'>
-        <ul>
+        {/* Desktop Menu */}
+        <ul className="nav-links">
           <li><NavLink exact="true" to="/" className={({ isActive }) => isActive ? "active-link" : ""}>Home</NavLink></li>
           <li><NavLink to="/about" className={({ isActive }) => isActive ? "active-link" : ""}>About Us</NavLink></li>
           <li><NavLink to="/services" className={({ isActive }) => isActive ? "active-link" : ""}>Our Services</NavLink></li>
           <li><NavLink to="/contact" className={({ isActive }) => isActive ? "active-link" : ""}>Contact</NavLink></li>
         </ul>
+
+        {/* Hamburger */}
+        <div className="hamburger" onClick={() => setOpen(!open)}>
+          <Hamburger toggled={open} toggle={setOpen} size={24} />
+        </div>
       </div>
 
-      {/* Dropdown nav for mobile when hamburger is toggled */}
-      {open && (
-        <div className='nav-ul'>
-          <ul>
-            <li><NavLink exact="true" to="/" onClick={handleLinkClick} className={({ isActive }) => isActive ? "active-link" : ""}>Home</NavLink></li>
-            <li><NavLink to="/about" onClick={handleLinkClick} className={({ isActive }) => isActive ? "active-link" : ""}>About</NavLink></li>
-            <li><NavLink to="/services" onClick={handleLinkClick} className={({ isActive }) => isActive ? "active-link" : ""}>Services</NavLink></li>
-            <li><NavLink to="/contact" onClick={handleLinkClick} className={({ isActive }) => isActive ? "active-link" : ""}>Contact Us</NavLink></li>
-          </ul>
-        </div>
-      )}
+      {/* Mobile Menu */}
+      <div className={`mobile-menu-wrapper ${open ? 'open' : ''}`}>
+        <ul>
+          <li><NavLink exact="true" to="/" onClick={handleLinkClick} className="mobile-link">Home</NavLink></li>
+          <li><NavLink to="/about" onClick={handleLinkClick} className="mobile-link">About Us</NavLink></li>
+          <li><NavLink to="/services" onClick={handleLinkClick} className="mobile-link">Our Services</NavLink></li>
+          <li><NavLink to="/contact" onClick={handleLinkClick} className="mobile-link">Contact</NavLink></li>
+        </ul>
+      </div>
     </nav>
   );
 };

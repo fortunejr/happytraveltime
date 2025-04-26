@@ -55,7 +55,7 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a href="#" alt="mail icon">
+              <a href="mailto:hello@happytraveltimelimited.com" alt="mail icon">
                 <img src="/images/mail.png"></img>Send a Mail
               </a>
             </li>
