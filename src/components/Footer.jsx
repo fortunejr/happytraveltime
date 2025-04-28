@@ -49,7 +49,7 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a target="_blank" rel="noreferrer" href="www.tiktok.com/@happytraveltime0">
+              <a target="_blank" rel="noreferrer" href="https://www.tiktok.com/@happytraveltime0">
                 <img src="/images/tiktok.png" alt="tiktok icon"></img>
                 TikTok
               </a>
