@@ -89,4 +89,53 @@
 .hero-section::before {
     pointer-events: none; /* <-- Add this too */
   }
+  .button-group {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+  }
   
+  /* Normal Book Now button */
+  .hero-button {
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* WhatsApp Button */
+  .hero-button2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px 24px;
+    font-size: 16px;
+    background-color: #25D366; /* WhatsApp green */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .hero-button2:hover {
+    background-color: #1ebe5b;
+  }
+  
+  .whatsapp-icon {
+    font-size: 20px;
+  }
+  
+  /* Responsive styling */
+  @media (min-width: 600px) {
+    .button-group {
+      flex-direction: row;
+    }
+  }
