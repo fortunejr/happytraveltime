@@ -16,7 +16,9 @@
     margin-bottom: 60px;
     margin-left: auto;
   }
-  
+  .responsive-container-block {
+    width: 80%;
+  }
   .contact_us_green input:focus {
     outline-color: initial;
     outline-style: none;

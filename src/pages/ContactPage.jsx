@@ -40,7 +40,7 @@ const ContactPage = () => {
 
                 {/* SOCIAL MEDIA ICONS */}
                 <div className="social-media-links">
-                  <a href="">
+                  <a href="https://www.tiktok.com/@happytraveltime0">
                     <img className="social-svg" src="/images/tiktok2.png" alt="tiktok"/>
                   </a>
                   <a href="https://www.instagram.com/happytraveltime0/">
