@@ -13,7 +13,7 @@ const HeroSection = () => {
 
         <div className="button-group">
           <Link to="/contact">
-            <button className="hero-button">Book now</button>
+            <button className="hero-button">Book your trip now</button>
           </Link>
 
           <a 
